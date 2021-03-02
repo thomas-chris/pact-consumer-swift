@@ -23,11 +23,10 @@ let package = Package(
     ),
     .testTarget(name: "PactConsumerSwiftTests",
                 dependencies: [
-                    .target(name: "PactConsumerSwift"),
-                    .product(name: "Quick", package: "Quick"),
-                    .product(name: "Nimble", package: "Nimble")
-                ]
-    )
+                    "PactConsumerSwift",
+                    "Quick",
+                    "Nimble",
+                 ])
   ]
 
 )
